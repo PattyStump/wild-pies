@@ -87,9 +87,12 @@ a:hover{color:var(--cream)}
 .reply{display:flex;align-items:center;gap:9px;margin-top:20px;font-size:13.5px;color:var(--green);font-weight:600}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
 .form{background:rgba(15,11,8,.5);border:1px solid var(--line);border-radius:6px;padding:22px}
-.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;min-width:0}
 .field label{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:rgba(244,232,212,.7)}
-.field input,.field select,.field textarea{background:var(--char);border:1px solid var(--line);border-radius:3px;color:var(--cream);font-family:'Archivo',sans-serif;font-size:15px;padding:12px 13px;width:100%}
+.field input,.field select,.field textarea{background:var(--char);border:1px solid var(--line);border-radius:3px;color:var(--cream);font-family:'Archivo',sans-serif;font-size:15px;padding:12px 13px;width:100%;min-width:0;max-width:100%}
+/* iOS gives date/number inputs a large fixed intrinsic width; normalise so
+   they shrink to their grid column instead of overflowing onto the next field */
+.field input[type=date],.field input[type=number]{-webkit-appearance:none;appearance:none}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ember);outline:none}
 .field textarea{resize:vertical;min-height:80px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
