@@ -98,14 +98,7 @@ a:hover{color:var(--cream)}
 
 /* FOOTER */
 .foot{background:var(--char);border-top:1px solid var(--line);padding:60px 0 40px}
-.signup{background:var(--char2);border:1px solid var(--line);border-radius:8px;padding:30px 24px;text-align:center;margin-bottom:48px}
-.signup .disp{font-size:clamp(24px,6vw,34px);color:var(--cream)}
-.signup p{color:rgba(244,232,212,.78);margin:10px auto 22px;max-width:38ch}
-.signup-form{display:flex;flex-direction:column;gap:10px;max-width:440px;margin:0 auto}
-.signup-form input{background:var(--char);border:1px solid var(--line);border-radius:3px;color:var(--cream);font-family:'Archivo',sans-serif;font-size:15px;padding:14px 15px;width:100%}
-.signup-form input:focus{border-color:var(--ember);outline:none}
-.signup-done{color:var(--green);font-weight:700}
-.foot-cols{display:grid;grid-template-columns:1fr;gap:28px;border-top:1px solid var(--line);padding-top:32px}
+.foot-cols{display:grid;grid-template-columns:1fr;gap:28px;padding-top:8px}
 .foot-h{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ember);margin-bottom:12px}
 .foot-col p,.foot-col a{display:block;color:rgba(244,232,212,.78);font-size:14.5px;margin-bottom:7px}
 .foot-col a:hover{color:var(--cream)}
@@ -113,7 +106,6 @@ a:hover{color:var(--cream)}
 
 @media(min-width:720px){
   .foot-cols{grid-template-columns:2fr 1fr 1fr}
-  .signup-form{flex-direction:row}
 }
 @media(min-width:900px){
   .sec{padding:96px 0}

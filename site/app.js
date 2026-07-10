@@ -16,14 +16,4 @@
       bookingDone.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   }
-
-  var signup = document.getElementById('signup-form');
-  var signupDone = document.getElementById('signup-done');
-  if (signup && signupDone) {
-    signup.addEventListener('submit', function (e) {
-      e.preventDefault();
-      signup.hidden = true;
-      signupDone.hidden = false;
-    });
-  }
 })();
