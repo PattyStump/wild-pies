@@ -95,7 +95,8 @@ a:hover{color:var(--cream)}
 .field input[type=date],.field input[type=number]{-webkit-appearance:none;appearance:none}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ember);outline:none}
 .field textarea{resize:vertical;min-height:80px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.frow{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:560px){.frow{grid-template-columns:1fr 1fr}}
 .form-done{text-align:center;padding:26px 10px}
 .form-done .disp{font-size:26px;color:var(--cream);margin-bottom:8px}
 
@@ -129,4 +130,5 @@ a:hover{color:var(--cream)}
   .s6{transform:translateX(66px) rotate(1deg)}
   .s7{transform:translateX(38px) rotate(-1.5deg)}
   .s8{transform:translateX(58px) rotate(1.2deg)}
+  .s9{transform:translateX(24px) rotate(-1.2deg)}
 }
